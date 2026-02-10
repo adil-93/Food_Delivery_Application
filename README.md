@@ -1,83 +1,142 @@
-🍔 Food Delivery Application
-📌 Project Overview
+.
 
-The Food Delivery Application is a web-based application that allows users to browse restaurants, view food items, place orders, and track deliveries online. The system is designed to make food ordering easy, fast, and user-friendly.
+🍔 Food Delivery Application (Java Web App)
+📌 Project Description
 
-This project demonstrates full-stack development concepts including frontend design, backend logic, database integration, and RESTful APIs.
+The Food Delivery Application is a Java-based web application developed using JSP, Servlets, JDBC, and MySQL following the MVC architecture.
+It allows users to register, log in, browse restaurants and menus, add food items to a cart, place orders, and view order history.
+
+This project focuses on real-time backend logic, database connectivity, and layered architecture using DAO and Model classes.
+
+🏗️ Project Architecture
+
+MVC (Model–View–Controller)
+
+Model – Business objects (User, Restaurant, Menu, Orders, Cart, etc.)
+
+View – JSP pages for UI
+
+Controller – Servlets handling requests and responses
+
+DAO Layer – Database operations using JDBC
+
+Utility Layer – Database connection handling
+
+📂 Project Structure
+Food_Delivery_Application
+│
+├── src/main/java/com/tap
+│   ├── DAO
+│   │   ├── UserDAO
+│   │   ├── RestaurantDAO
+│   │   ├── MenuDAO
+│   │   ├── OrdersDAO
+│   │   └── OrderItemsDAO
+│   │
+│   ├── DAOimplementation
+│   │   ├── UserDAOImpl
+│   │   ├── RestaurantDAOImpl
+│   │   ├── MenuDAOImpl
+│   │   ├── OrdersDAOImpl
+│   │   └── OrderItemsDAOImpl
+│   │
+│   ├── model
+│   │   ├── User
+│   │   ├── Restaurant
+│   │   ├── Menu
+│   │   ├── Orders
+│   │   ├── OrderItems
+│   │   ├── Cart
+│   │   └── CartItem
+│   │
+│   ├── servlets
+│   │   ├── LoginServlet
+│   │   ├── RegistrationServlet
+│   │   ├── HomeServlet
+│   │   ├── MenuServlet
+│   │   ├── CartServlet
+│   │   ├── CheckoutServlet
+│   │   ├── OrdersServlet
+│   │   └── OrderPlacedServlet
+│   │
+│   └── utility
+│       └── db_connection
+│
+├── build/classes
+├── WebContent (JSP files)
+└── README.md
 
 🚀 Features
 
-User registration and login
+User Registration & Login
 
-Browse restaurants and food items
+View restaurants and food menus
 
 Add food items to cart
 
-Place and manage orders
+Place food orders
 
-Order history tracking
+View order history
 
-Admin panel to manage food items and orders
+Session-based cart management
+
+JDBC-based database interaction
 
 🛠️ Technologies Used
-Frontend
-
-HTML
-
-CSS
-
-JavaScript
-
 Backend
 
 Java
 
 JSP & Servlets
 
-Spring Boot (if applicable)
+JDBC
 
 Database
 
 MySQL
 
-Tools
+Frontend
 
-Eclipse / IntelliJ IDEA
+HTML
+
+CSS
+
+Tools & Server
+
+Eclipse IDE
 
 Apache Tomcat
 
 Git & GitHub
 
-🏗️ Project Architecture
+🗄️ Database Tables
 
-MVC (Model–View–Controller) Architecture
+users – stores user details
 
-REST API based communication
+restaurants – restaurant information
 
-Database-driven application
+menu – food items and prices
 
-🗄️ Database Design
+orders – order summary
 
-Users – stores user details
-
-Restaurants – stores restaurant information
-
-Food Items – stores menu details
+order_items – ordered food details
 
 🎯 Learning Outcomes
 
-Hands-on experience with Java Full Stack development
+Strong understanding of Servlet lifecycle
 
-Understanding of MVC architecture
+Hands-on experience with JDBC and DAO pattern
 
-Database integration using MySQL
+Implementation of MVC architecture
 
-Real-time project development experience
+Session management and cart handling
+
+Real-time Java web application development
 
 👤 Author
 
 Adil Shaik
 Java Full Stack Developer
-Orders – stores order information
 
-Order Details – stores ordered food items
+
+

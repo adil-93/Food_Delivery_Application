@@ -26,45 +26,12 @@ Utility Layer – Database connection handling
 Food_Delivery_Application
 │
 ├── src/main/java/com/tap
-│   ├── DAO
-│   │   ├── UserDAO
-│   │   ├── RestaurantDAO
-│   │   ├── MenuDAO
-│   │   ├── OrdersDAO
-│   │   └── OrderItemsDAO
-│   │
-│   ├── DAOimplementation
-│   │   ├── UserDAOImpl
-│   │   ├── RestaurantDAOImpl
-│   │   ├── MenuDAOImpl
-│   │   ├── OrdersDAOImpl
-│   │   └── OrderItemsDAOImpl
-│   │
-│   ├── model
-│   │   ├── User
-│   │   ├── Restaurant
-│   │   ├── Menu
-│   │   ├── Orders
-│   │   ├── OrderItems
-│   │   ├── Cart
-│   │   └── CartItem
-│   │
-│   ├── servlets
-│   │   ├── LoginServlet
-│   │   ├── RegistrationServlet
-│   │   ├── HomeServlet
-│   │   ├── MenuServlet
-│   │   ├── CartServlet
-│   │   ├── CheckoutServlet
-│   │   ├── OrdersServlet
-│   │   └── OrderPlacedServlet
-│   │
-│   └── utility
-│       └── db_connection
-│
-├── build/classes
-├── WebContent (JSP files)
-└── README.md
+   ├── DAO
+   ├── DAOimplementation
+   ├── model
+   ├── servlets
+   └── utility
+   └── db_connection
 
 🚀 Features
 
